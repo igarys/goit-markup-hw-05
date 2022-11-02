@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-border">
+    <header>
       <div class="container header-wrapper">
       
         <nav class="nav-wrapper">
@@ -30,11 +30,11 @@
           ><span>Web</span><span class="logo-studio">Studio</span>
         </a>
             <ul class="list nav">
-              <li><a class="list-item agencja" href="/">Agencja</a></li>
-              <li>
+              <li class="nav-border"><a class="list-item agencja" href="/">Agencja</a></li>
+              <li class="nav-border">
                 <a class="list-item" href="./portfolio.html">Portfolio</a>
               </li>
-              <li><a class="list-item" href="/">Kontakt</a></li>
+              <li class="nav-border"><a class="list-item" href="/">Kontakt</a></li>
             </ul>
           
         </nav>
@@ -128,8 +128,11 @@
       <section class="container">
         <h2 class="small-header">Czym się zajmujemy</h2>
         <ul class="list img-gap">
-          <li>
-            <img class="we-do-img"
+          <li class="we-do-img">
+            <div class="label-box">
+              <h4 class="label">APLIKACJE KOMPUTEROWE</h4>
+            </div>
+            <img
               src="./images/box.jpg"
               alt="man typing on a computer"
               width="370"
@@ -137,7 +140,10 @@
             />
           </li>
 
-          <li>
+           <li class="we-do-img">
+            <div class="label-box">
+              <h4 class="label">APLIKACJE MOBILNE</h4>
+            </div>
             <img class="we-do-img"
               src="./images/box1.jpg"
               alt="woman sitting in front of a computer, holding a phone"
@@ -146,7 +152,10 @@
             />
           </li>
 
-          <li>
+          <li class="we-do-img">
+            <div class="label-box">
+              <h4 class="label">ROZWIĄZANIA GRAFICZNE</h4>
+            </div>
             <img class="we-do-img"
               src="./images/box2.jpg"
               alt="iPad with color panel"
@@ -394,5 +403,6 @@
       </div>
       </div>
     </footer>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
