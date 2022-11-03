@@ -64,7 +64,12 @@
       <section class="motto-wrapper">
         <div class="container motto">
         <h1 class="header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="button" type="button">Zamów usługe</button>
+        <button class="button" data-modal-open><span>Zamów usługe</span></button>
+        <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-btn" data-modal-close><span>x</span></button> 
+        </div>
+        </div>
         </div>
       </section>
 
@@ -144,7 +149,7 @@
             <div class="label-box">
               <h4 class="label">APLIKACJE MOBILNE</h4>
             </div>
-            <img class="we-do-img"
+            <img
               src="./images/box1.jpg"
               alt="woman sitting in front of a computer, holding a phone"
               width="370"
@@ -156,7 +161,7 @@
             <div class="label-box">
               <h4 class="label">ROZWIĄZANIA GRAFICZNE</h4>
             </div>
-            <img class="we-do-img"
+            <img
               src="./images/box2.jpg"
               alt="iPad with color panel"
               width="370"
