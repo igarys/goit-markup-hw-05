@@ -53,7 +53,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list .list-item:hover,
 .list .list-item:focus {
   color: var(--active-background-color);
 }
@@ -200,6 +199,7 @@ body {
   font-family: inherit;
   padding-inline: 22px;
   padding-block: 6px;
+  line-height: 1.62;
   /* transition: color;
   transition: background-color;
   transition: box-shadow; */
@@ -294,7 +294,6 @@ body {
 .image-box {
   box-sizing: border-box;
   background-color: var(--active-text-color);
-  height: 404px;
   justify-content: center;
   text-align: center;
   margin: 0.4px;
@@ -452,19 +451,6 @@ body {
 .footer-color {
   fill: var(--active-text-color);
 }
-.portfolio {
-  color: var(--active-background-color);
-}
-.portfolio::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 53px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--active-background-color);
-}
 
 /* HW 05 */
 
@@ -483,10 +469,12 @@ body {
 .we-do-img {
   position: relative;
 }
-.agencja {
+.agencja,
+.portfolio {
   color: var(--active-background-color);
 }
-.agencja::after {
+.agencja::after,
+.portfolio::after {
   content: "";
   display: block;
   position: absolute;
@@ -496,7 +484,7 @@ body {
   border-radius: 2px;
   background-color: var(--active-background-color);
 }
-.nav-border::after {
+/* .nav-border::after {
   content: "";
   display: block;
   position: absolute;
@@ -512,7 +500,7 @@ body {
 }
 .nav-border:hover::after {
   opacity: 1;
-}
+} */
 
 .overlay {
   width: 370px;
